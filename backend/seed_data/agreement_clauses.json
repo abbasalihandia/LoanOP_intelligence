@@ -1,0 +1,93 @@
+{
+  "description": "SYNTHETIC DATA. Invented facility agreement and amendment clauses for the POC. Not taken from any real agreement.",
+  "records": [
+    {
+      "clause_id": "CL-FA1001-1.1",
+      "document_ref": "FA-1001",
+      "document_type": "FACILITY_AGREEMENT",
+      "facility_id": "FAC-1001",
+      "loan_id": "LN-1001",
+      "clause_number": "1.1",
+      "title": "Definitions - Termination Date",
+      "text": "\"Termination Date\" means 30 June 2030.",
+      "effective_date": "2025-01-15"
+    },
+    {
+      "clause_id": "CL-FA1001-2.1",
+      "document_ref": "FA-1001",
+      "document_type": "FACILITY_AGREEMENT",
+      "facility_id": "FAC-1001",
+      "loan_id": "LN-1001",
+      "clause_number": "2.1",
+      "title": "The Facility",
+      "text": "Subject to the terms of this Agreement, the Lenders make available to the Borrower a US Dollar revolving credit facility in an aggregate amount equal to USD 10,000,000. Amounts repaid may be re-borrowed during the Availability Period.",
+      "effective_date": "2025-01-15"
+    },
+    {
+      "clause_id": "CL-FA1003-2.1",
+      "document_ref": "FA-1003",
+      "document_type": "FACILITY_AGREEMENT",
+      "facility_id": "FAC-1003",
+      "loan_id": "LN-1003",
+      "clause_number": "2.1",
+      "title": "The Facility",
+      "text": "Subject to the terms of this Agreement, the Lenders make available to the Borrower a US Dollar term loan facility in an aggregate amount equal to USD 25,000,000.",
+      "effective_date": "2024-10-28"
+    },
+    {
+      "clause_id": "CL-AMD1003-01-3",
+      "document_ref": "AMD-1003-01",
+      "document_type": "AMENDMENT",
+      "facility_id": "FAC-1003",
+      "loan_id": "LN-1003",
+      "clause_number": "3",
+      "title": "Reduction of Commitments",
+      "text": "With effect from 15 June 2025, the Total Commitments under the Facility are reduced from USD 25,000,000 to USD 20,000,000. All other terms of the Facility Agreement remain unchanged.",
+      "effective_date": "2025-06-15"
+    },
+    {
+      "clause_id": "CL-FA1005-1.1",
+      "document_ref": "FA-1005",
+      "document_type": "FACILITY_AGREEMENT",
+      "facility_id": "FAC-1005",
+      "loan_id": "LN-1005",
+      "clause_number": "1.1",
+      "title": "Definitions - Termination Date",
+      "text": "\"Termination Date\" means 31 December 2029.",
+      "effective_date": "2025-03-10"
+    },
+    {
+      "clause_id": "CL-FA1006-1.1",
+      "document_ref": "FA-1006",
+      "document_type": "FACILITY_AGREEMENT",
+      "facility_id": "FAC-1006",
+      "loan_id": "LN-1006",
+      "clause_number": "1.1",
+      "title": "Definitions - Termination Date",
+      "text": "\"Termination Date\" means the date falling 12 months after the first Utilisation Date.",
+      "effective_date": "2025-08-29"
+    },
+    {
+      "clause_id": "CL-FA1007-8.2",
+      "document_ref": "FA-1007",
+      "document_type": "FACILITY_AGREEMENT",
+      "facility_id": "FAC-1007",
+      "loan_id": "LN-1007",
+      "clause_number": "8.2",
+      "title": "Calculation of Interest",
+      "text": "The rate of interest on each Loan for each Interest Period is the percentage rate per annum which is the aggregate of the applicable Margin and Compounded SORA for an Interest Period of three months.",
+      "effective_date": "2025-07-10"
+    },
+    {
+      "clause_id": "CL-FA1010-2.1",
+      "document_ref": "FA-1010",
+      "document_type": "FACILITY_AGREEMENT",
+      "facility_id": "FAC-1010",
+      "loan_id": "LN-1010",
+      "clause_number": "2.1",
+      "title": "The Facility",
+      "text": "Subject to the terms of this Agreement, the Lenders make available to the Borrower a US Dollar bridge term loan facility in an aggregate amount equal to USD 6,000,000, to be refinanced from the proceeds of the Permitted Disposal.",
+      "effective_date": "2025-07-21"
+    }
+  ]
+}

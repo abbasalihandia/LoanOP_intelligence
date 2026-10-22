@@ -1,0 +1,20 @@
+# LoanOps Intelligence - backend dependencies
+#
+# Version ranges, not exact pins: after a successful install, run
+#   pip freeze > requirements.lock.txt
+# to record the exact versions that worked on your machine.
+
+# Web framework and ASGI server
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+
+# Request/response validation and settings loaded from .env
+pydantic>=2.9,<3.0
+pydantic-settings>=2.5,<3.0
+
+# Database layer (Phase 1). 2.0.36+ is required for Python 3.13.
+sqlalchemy>=2.0.36,<3.0
+
+# Testing. Starlette's TestClient now expects httpx2 (replaces httpx).
+pytest>=8.3,<9.0
+httpx2>=2.13,<3.0

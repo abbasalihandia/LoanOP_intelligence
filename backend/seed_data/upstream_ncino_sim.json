@@ -1,0 +1,149 @@
+{
+  "source_system": "NCINO_SIM",
+  "simulated": true,
+  "description": "SYNTHETIC DATA. Simulated nCino-style loan origination feed. Field names imitate the nCino style for realism; no real system, borrower or transaction is represented.",
+  "records": [
+    {
+      "Name": "LN-1001",
+      "Facility_Ref__c": "FAC-1001",
+      "LLC_BI__Borrower_Name__c": "Northwind Logistics Ltd",
+      "LLC_BI__Product__c": "Revolving Credit",
+      "LLC_BI__Amount__c": 10000000.00,
+      "CurrencyIsoCode": "USD",
+      "LLC_BI__Maturity_Date__c": "2030-06-30",
+      "LLC_BI__Stage__c": "Credit Review",
+      "LastModifiedDate": "2025-01-20T10:15:00Z"
+    },
+    {
+      "Name": "LN-1001",
+      "Facility_Ref__c": "FAC-1001",
+      "LLC_BI__Borrower_Name__c": "Northwind Logistics Ltd",
+      "LLC_BI__Product__c": "Revolving Credit",
+      "LLC_BI__Amount__c": 10000000.00,
+      "CurrencyIsoCode": "USD",
+      "LLC_BI__Maturity_Date__c": "2030-06-30",
+      "LLC_BI__Stage__c": "Approved",
+      "LastModifiedDate": "2025-02-03T14:30:00Z"
+    },
+    {
+      "Name": "LN-1002",
+      "Facility_Ref__c": "FAC-1002",
+      "LLC_BI__Borrower_Name__c": "Harbourview Healthcare plc",
+      "LLC_BI__Product__c": "Term Loan",
+      "LLC_BI__Amount__c": 5000000.00,
+      "CurrencyIsoCode": "GBP",
+      "LLC_BI__Maturity_Date__c": "2028-09-30",
+      "LLC_BI__Stage__c": "Approved",
+      "LastModifiedDate": "2025-04-11T09:00:00Z"
+    },
+    {
+      "Name": "LN-1002",
+      "Facility_Ref__c": "FAC-1002",
+      "LLC_BI__Borrower_Name__c": "Harbourview Healthcare plc",
+      "LLC_BI__Product__c": "Term Loan",
+      "LLC_BI__Amount__c": 5000000.00,
+      "CurrencyIsoCode": "GBP",
+      "LLC_BI__Maturity_Date__c": "2028-09-30",
+      "LLC_BI__Stage__c": "Approved",
+      "LastModifiedDate": "2025-04-11T09:00:00Z"
+    },
+    {
+      "Name": "LN-1003",
+      "Facility_Ref__c": "FAC-1003",
+      "LLC_BI__Borrower_Name__c": "Cobalt Ridge Mining Corp",
+      "LLC_BI__Product__c": "Term Loan",
+      "LLC_BI__Amount__c": 25000000.00,
+      "CurrencyIsoCode": "USD",
+      "LLC_BI__Maturity_Date__c": "2031-03-31",
+      "LLC_BI__Stage__c": "Approved",
+      "LastModifiedDate": "2024-11-05T12:00:00Z"
+    },
+    {
+      "Name": "LN-1004",
+      "Facility_Ref__c": "FAC-1004",
+      "LLC_BI__Borrower_Name__c": "Altamira Foods SA",
+      "LLC_BI__Product__c": "Revolving Credit",
+      "LLC_BI__Amount__c": 15000000.00,
+      "CurrencyIsoCode": "EUR",
+      "LLC_BI__Maturity_Date__c": "2029-06-30",
+      "LLC_BI__Stage__c": "Approved",
+      "LastModifiedDate": "2025-05-20T08:40:00Z"
+    },
+    {
+      "Name": "LN-1005",
+      "Facility_Ref__c": "FAC-1005",
+      "LLC_BI__Borrower_Name__c": "Silverline Telecom Inc",
+      "LLC_BI__Product__c": "Term Loan",
+      "LLC_BI__Amount__c": 7500000.00,
+      "CurrencyIsoCode": "USD",
+      "LLC_BI__Maturity_Date__c": "2029-12-31",
+      "LLC_BI__Stage__c": "Approved",
+      "LastModifiedDate": "2025-03-12T15:20:00Z"
+    },
+    {
+      "Name": "LN-1006",
+      "Facility_Ref__c": "FAC-1006",
+      "LLC_BI__Borrower_Name__c": "Brightwater Renewables Ltd",
+      "LLC_BI__Product__c": "Bridge Loan",
+      "LLC_BI__Amount__c": 3000000.00,
+      "CurrencyIsoCode": "USD",
+      "LLC_BI__Maturity_Date__c": null,
+      "LLC_BI__Stage__c": "Approved",
+      "LastModifiedDate": "2025-09-02T11:05:00Z"
+    },
+    {
+      "Name": "LN-1007",
+      "Facility_Ref__c": "FAC-1007",
+      "LLC_BI__Borrower_Name__c": "Meridian Shipping Pte Ltd",
+      "LLC_BI__Product__c": "Term Loan",
+      "LLC_BI__Amount__c": 8000000.00,
+      "CurrencyIsoCode": "SGD",
+      "LLC_BI__Maturity_Date__c": "2030-12-31",
+      "LLC_BI__Stage__c": "Approved",
+      "LastModifiedDate": "2025-07-14T07:30:00Z"
+    },
+    {
+      "Name": "LN-1008",
+      "Facility_Ref__c": "FAC-1008",
+      "LLC_BI__Borrower_Name__c": "Granite Peak Construction LLC",
+      "LLC_BI__Product__c": "Letter of Credit",
+      "LLC_BI__Amount__c": 2000000.00,
+      "CurrencyIsoCode": "USD",
+      "LLC_BI__Maturity_Date__c": "2027-03-31",
+      "LLC_BI__Stage__c": "Approved",
+      "LastModifiedDate": "2025-08-28T13:10:00Z"
+    },
+    {
+      "Name": "LN-1009",
+      "Facility_Ref__c": "FAC-1009",
+      "LLC_BI__Borrower_Name__c": "Lumen Data Centres Ltd",
+      "LLC_BI__Product__c": "Term Loan",
+      "LLC_BI__Amount__c": 12500000.00,
+      "CurrencyIsoCode": "USD",
+      "LLC_BI__Maturity_Date__c": "2032-06-30",
+      "LLC_BI__Stage__c": "Approved",
+      "LastModifiedDate": "2025-06-03T10:00:00Z"
+    },
+    {
+      "Name": "LN-1010",
+      "Facility_Ref__c": "FAC-1010",
+      "LLC_BI__Borrower_Name__c": "Crescent Retail Holdings Ltd",
+      "LLC_BI__Product__c": "Bridge Loan",
+      "LLC_BI__Amount__c": 6000000.00,
+      "CurrencyIsoCode": "USD",
+      "LLC_BI__Maturity_Date__c": "2027-01-31",
+      "LLC_BI__Stage__c": "Approved",
+      "LastModifiedDate": "2025-07-25T16:45:00Z"
+    },
+    {
+      "Facility_Ref__c": "FAC-9001",
+      "LLC_BI__Borrower_Name__c": "Unknown Borrower",
+      "LLC_BI__Product__c": "Term Loan",
+      "LLC_BI__Amount__c": 1000000.00,
+      "CurrencyIsoCode": "USD",
+      "LLC_BI__Maturity_Date__c": "2028-01-31",
+      "LLC_BI__Stage__c": "Draft",
+      "LastModifiedDate": "2025-09-15T09:00:00Z"
+    }
+  ]
+}

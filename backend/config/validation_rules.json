@@ -1,0 +1,42 @@
+{
+  "description": "Deterministic validation settings. Changing this file changes how exceptions are raised and graded; each validation run records this file's SHA-256.",
+  "tolerances": {
+    "amount_absolute": "0.01",
+    "maturity_days": 0
+  },
+  "statuses": {
+    "upstream_approved": ["APPROVED"],
+    "downstream_failed": ["FAILED", "REJECTED"]
+  },
+  "severity": {
+    "default": "MEDIUM",
+    "by_rule": {
+      "RULE-REQ-001": "HIGH",
+      "RULE-TYPE-001": "HIGH",
+      "RULE-PRODUCT-001": "HIGH",
+      "RULE-CCY-001": "CRITICAL",
+      "RULE-AMT-001": "HIGH",
+      "RULE-MAT-001": "MEDIUM",
+      "RULE-MAP-001": "HIGH",
+      "RULE-MAP-002": "MEDIUM",
+      "RULE-MAP-003": "MEDIUM",
+      "RULE-BOOK-001": "HIGH",
+      "RULE-BOOK-002": "MEDIUM",
+      "RULE-BOOK-003": "MEDIUM"
+    },
+    "overrides": [
+      {
+        "rule_id": "RULE-AMT-001",
+        "metric": "pct_difference",
+        "gte": "10",
+        "severity": "CRITICAL"
+      },
+      {
+        "rule_id": "RULE-MAT-001",
+        "metric": "days_difference",
+        "gte": "30",
+        "severity": "HIGH"
+      }
+    ]
+  }
+}

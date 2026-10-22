@@ -1,0 +1,80 @@
+{
+  "description": "SYNTHETIC DATA. Invented historical exception cases. Reviewer identifiers are fictitious.",
+  "records": [
+    {
+      "case_id": "HX-2024-0117",
+      "loan_id": "LN-0877",
+      "category": "PRODUCT_MISMATCH",
+      "field_name": "product_type",
+      "source_value": "Revolving Credit",
+      "target_value": "TERM",
+      "description": "Upstream product Revolving Credit was booked downstream as TERM.",
+      "confirmed_root_cause": "Product mapping PRODMAP-v1 mapped Revolving Credit to TERM (mapping defect).",
+      "resolution": "Facility type confirmed as revolving against the executed facility agreement. Servicing corrected the Loan IQ product. Mapping defect raised with the integration team.",
+      "outcome": "RESOLVED",
+      "resolved_by": "analyst.sim.001",
+      "resolved_at": "2024-12-12T11:20:00Z",
+      "keywords": ["product", "mapping", "revolving", "term", "PRODMAP-v1"]
+    },
+    {
+      "case_id": "HX-2025-0031",
+      "loan_id": "LN-0912",
+      "category": "AMOUNT_MISMATCH",
+      "field_name": "amount",
+      "source_value": "40000000.00",
+      "target_value": "35000000.00",
+      "description": "Upstream approved amount exceeded the downstream facility amount by USD 5,000,000.",
+      "confirmed_root_cause": "Commitment reduction amendment was processed in Loan IQ, but the origination record was not updated.",
+      "resolution": "Upstream record updated after confirming the executed amendment. Downstream record left unchanged.",
+      "outcome": "RESOLVED",
+      "resolved_by": "analyst.sim.002",
+      "resolved_at": "2025-04-03T09:45:00Z",
+      "keywords": ["amount", "amendment", "commitment", "reduction", "upstream"]
+    },
+    {
+      "case_id": "HX-2025-0058",
+      "loan_id": "LN-0954",
+      "category": "BOOKING_FAILURE",
+      "field_name": "status",
+      "source_value": "APPROVED",
+      "target_value": "FAILED",
+      "description": "Downstream booking failed with a missing pricing option error.",
+      "confirmed_root_cause": "Pricing option for a new benchmark rate had not been set up in servicing static data.",
+      "resolution": "Static data team added the pricing option. Booking resubmitted successfully.",
+      "outcome": "RESOLVED",
+      "resolved_by": "analyst.sim.001",
+      "resolved_at": "2025-05-22T16:05:00Z",
+      "keywords": ["booking", "failed", "pricing option", "static data", "benchmark"]
+    },
+    {
+      "case_id": "HX-2025-0074",
+      "loan_id": "LN-0968",
+      "category": "MATURITY_MISMATCH",
+      "field_name": "maturity_date",
+      "source_value": "2028-03-31",
+      "target_value": "2028-03-01",
+      "description": "Downstream maturity date differed from the upstream approved maturity date by 30 days.",
+      "confirmed_root_cause": "Manual keying error at booking (day field).",
+      "resolution": "Downstream maturity corrected to the Termination Date in the facility agreement.",
+      "outcome": "RESOLVED",
+      "resolved_by": "analyst.sim.003",
+      "resolved_at": "2025-06-30T10:30:00Z",
+      "keywords": ["maturity", "date", "keying", "manual", "termination date"]
+    },
+    {
+      "case_id": "HX-2025-0090",
+      "loan_id": "LN-0989",
+      "category": "PRODUCT_MISMATCH",
+      "field_name": "product_type",
+      "source_value": "Bridge Loan",
+      "target_value": "TERM",
+      "description": "Upstream Bridge Loan was booked downstream as TERM.",
+      "confirmed_root_cause": null,
+      "resolution": "Closed without root cause after the borrower prepaid the facility in full.",
+      "outcome": "CLOSED_UNRESOLVED",
+      "resolved_by": "analyst.sim.002",
+      "resolved_at": "2025-08-19T14:00:00Z",
+      "keywords": ["product", "bridge", "term", "prepaid"]
+    }
+  ]
+}

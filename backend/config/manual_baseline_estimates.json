@@ -1,0 +1,41 @@
+{
+  "label": "ESTIMATE",
+  "description": "Assumed analyst minutes for investigating an exception manually versus with the workbench. These are planning estimates for discussion, NOT measurements. Replace them with timed observations when available.",
+  "assumptions": [
+    "Manual: the analyst works across separate systems (origination, servicing, mapping configuration, document store, past-case log) with no pre-assembled evidence.",
+    "AI-assisted: the model runs unattended; analyst time is reviewing the report and evidence in the workbench, plus recording the resolution.",
+    "Steps whose evidence is not held by the platform (e.g. servicing static data, interface logs) remain manual in both modes.",
+    "Review time assumes the report is usable; when it is wrong, review takes longer (see the sensitivity factor)."
+  ],
+  "manual_steps": {
+    "compare_records": {"label": "Open both systems, locate the loan, compare fields", "minutes": 8},
+    "mapping_lookup": {"label": "Find the interface mapping configuration and the version applied", "minutes": 10},
+    "document_review": {"label": "Retrieve and read the facility agreement and amendments", "minutes": 12},
+    "history_search": {"label": "Search past exception logs for similar cases", "minutes": 10},
+    "static_data_check": {"label": "Check servicing static data / pricing set-up", "minutes": 15},
+    "interface_logs": {"label": "Check interface and booking logs", "minutes": 10},
+    "write_up": {"label": "Write up findings and next steps", "minutes": 8}
+  },
+  "manual_steps_by_category": {
+    "PRODUCT_MISMATCH": ["compare_records", "mapping_lookup", "document_review", "history_search", "write_up"],
+    "MAPPING_INCONSISTENCY": ["compare_records", "mapping_lookup", "document_review", "history_search", "write_up"],
+    "AMOUNT_MISMATCH": ["compare_records", "document_review", "history_search", "write_up"],
+    "CURRENCY_MISMATCH": ["compare_records", "document_review", "history_search", "write_up"],
+    "MATURITY_MISMATCH": ["compare_records", "document_review", "history_search", "write_up"],
+    "MISSING_FIELD": ["compare_records", "document_review", "write_up"],
+    "BOOKING_FAILURE": ["compare_records", "static_data_check", "document_review", "history_search", "write_up"],
+    "MISSING_DOWNSTREAM": ["compare_records", "interface_logs", "write_up"],
+    "ORPHAN_DOWNSTREAM": ["compare_records", "interface_logs", "write_up"],
+    "DATA_TYPE": ["compare_records", "write_up"]
+  },
+  "ai_assisted": {
+    "review_minutes": {"default": 10, "DATA_TYPE": 5, "MISSING_DOWNSTREAM": 6, "ORPHAN_DOWNSTREAM": 6},
+    "resolution_minutes": 3,
+    "residual_manual_steps_by_category": {
+      "BOOKING_FAILURE": ["static_data_check"],
+      "MISSING_DOWNSTREAM": ["interface_logs"],
+      "ORPHAN_DOWNSTREAM": ["interface_logs"]
+    },
+    "review_sensitivity_factor": 2.0
+  }
+}

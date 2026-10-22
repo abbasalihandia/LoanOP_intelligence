@@ -1,0 +1,133 @@
+{
+  "source_system": "LOANIQ_SIM",
+  "simulated": true,
+  "description": "SYNTHETIC DATA. Simulated Finastra Loan IQ-style servicing feed. No real system, borrower or transaction is represented.",
+  "records": [
+    {
+      "loanReference": "LN-1001",
+      "facilityAlias": "FAC-1001",
+      "borrowerShortName": "NORTHWIND LOGISTICS",
+      "productCode": "TERM",
+      "globalAmount": 10000000,
+      "currency": "USD",
+      "expiryDate": "30-Jun-2030",
+      "bookingStatus": "BOOKED",
+      "bookingError": null,
+      "mappingVersion": "PRODMAP-v1",
+      "lastUpdated": "2025-02-10T08:45:00Z"
+    },
+    {
+      "loanReference": "LN-1002",
+      "facilityAlias": "FAC-1002",
+      "borrowerShortName": "HARBOURVIEW HEALTHCARE",
+      "productCode": "TERM",
+      "globalAmount": 5000000,
+      "currency": "GBP",
+      "expiryDate": "30-Sep-2028",
+      "bookingStatus": "BOOKED",
+      "bookingError": null,
+      "mappingVersion": "PRODMAP-v2",
+      "lastUpdated": "2025-04-14T10:30:00Z"
+    },
+    {
+      "loanReference": "LN-1003",
+      "facilityAlias": "FAC-1003",
+      "borrowerShortName": "COBALT RIDGE MINING",
+      "productCode": "TERM",
+      "globalAmount": 20000000,
+      "currency": "USD",
+      "expiryDate": "31-Mar-2031",
+      "bookingStatus": "BOOKED",
+      "bookingError": null,
+      "mappingVersion": "PRODMAP-v1",
+      "lastUpdated": "2025-06-20T09:15:00Z"
+    },
+    {
+      "loanReference": "LN-1004",
+      "facilityAlias": "FAC-1004",
+      "borrowerShortName": "ALTAMIRA FOODS",
+      "productCode": "REVOLVER",
+      "globalAmount": 15000000,
+      "currency": "USD",
+      "expiryDate": "30-Jun-2029",
+      "bookingStatus": "BOOKED",
+      "bookingError": null,
+      "mappingVersion": "PRODMAP-v2",
+      "lastUpdated": "2025-05-23T11:00:00Z"
+    },
+    {
+      "loanReference": "LN-1005",
+      "facilityAlias": "FAC-1005",
+      "borrowerShortName": "SILVERLINE TELECOM",
+      "productCode": "TERM",
+      "globalAmount": 7500000,
+      "currency": "USD",
+      "expiryDate": "01-Dec-2029",
+      "bookingStatus": "BOOKED",
+      "bookingError": null,
+      "mappingVersion": "PRODMAP-v2",
+      "lastUpdated": "2025-03-18T14:00:00Z"
+    },
+    {
+      "loanReference": "LN-1006",
+      "facilityAlias": "FAC-1006",
+      "borrowerShortName": "BRIGHTWATER RENEWABLES",
+      "productCode": "BRIDGE",
+      "globalAmount": 3000000,
+      "currency": "USD",
+      "expiryDate": "30-Nov-2026",
+      "bookingStatus": "BOOKED",
+      "bookingError": null,
+      "mappingVersion": "PRODMAP-v2",
+      "lastUpdated": "2025-09-05T09:20:00Z"
+    },
+    {
+      "loanReference": "LN-1007",
+      "facilityAlias": "FAC-1007",
+      "borrowerShortName": "MERIDIAN SHIPPING",
+      "productCode": "TERM",
+      "globalAmount": 8000000,
+      "currency": "SGD",
+      "expiryDate": "31-Dec-2030",
+      "bookingStatus": "FAILED",
+      "bookingError": "Pricing option SORA-3M not configured for facility FAC-1007",
+      "mappingVersion": "PRODMAP-v2",
+      "lastUpdated": "2025-07-15T06:50:00Z"
+    },
+    {
+      "loanReference": "LN-1009",
+      "facilityAlias": "FAC-1009",
+      "borrowerShortName": "LUMEN DATA CENTRES",
+      "productCode": "TERM",
+      "globalAmount": "12,5OO,000",
+      "currency": "USD",
+      "expiryDate": "30-Jun-2032",
+      "bookingStatus": "BOOKED",
+      "bookingError": null,
+      "mappingVersion": "PRODMAP-v2",
+      "lastUpdated": "2025-06-06T12:40:00Z"
+    },
+    {
+      "loanReference": "LN-1010",
+      "facilityAlias": "FAC-1010",
+      "borrowerShortName": "CRESCENT RETAIL",
+      "productCode": "TERM",
+      "globalAmount": 6000000,
+      "currency": "USD",
+      "expiryDate": "31-Jan-2027",
+      "bookingStatus": "BOOKED",
+      "bookingError": null,
+      "mappingVersion": "PRODMAP-v2",
+      "lastUpdated": "2025-08-05T10:10:00Z"
+    },
+    {
+      "facilityAlias": "FAC-9999",
+      "productCode": "TERM",
+      "globalAmount": 500000,
+      "currency": "USD",
+      "bookingStatus": "PENDING",
+      "lastUpdated": "2025-09-20T07:00:00Z"
+    },
+    "<<interface message truncated: unexpected end of payload>>"
+  ]
+}
